@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Events | CampusConnect</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+    <img src="images/logo.png" alt="CampusConnect Logo">
+    <span>CampusConnect</span>
+</div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="notices.html">Notices</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="notifications.html">🔔 Notifications</a></li>
+                <li><a href="admin.html">⚙️ Admin Panel</a></li>
+            </ul>
+
+            <a href="login.html" class="login-btn">Login</a>
+
+        </nav>
+    </header>
+
+
+    <!-- Events Header -->
+    <section class="page-header">
+
+        <h1>Campus Events</h1>
+
+        <p>
+            Discover what's happening around your campus.
+        </p>
+
+    </section>
+
+
+    <!-- Events -->
+    <main class="events-page">
+
+        <div class="event-grid" id="eventGrid">
+            
+
+            <!-- Event 1 -->
+            <div class="event-card" id="event-1">
+
+                <div class="event-image">
+                    <img src="images/tech-fest.png" alt="Tech Fest">
+                </div>
+
+                <div class="event-info">
+
+                    <span class="event-category">Technical</span>
+
+                    <h2>Tech Fest 2026</h2>
+                    
+                        
+
+                    <p>📅 September 15, 2026</p>
+                    <p>🕐 10:00 AM</p>
+                    <p>📍 College Auditorium</p>
+
+                    <button class="register-btn" onclick="registerForEvent(1)">Register</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Event 2 -->
+            <div class="event-card" id="event-2">
+
+                <div class="event-image">
+                    <img src="images/cultural-night.png" alt="Cultural Night">
+                </div>
+
+                <div class="event-info">
+
+                    <span class="event-category">Cultural</span>
+
+                    <h2>Cultural Night</h2>
+
+                    <p>📅 September 20, 2026</p>
+                    <p>🕐 6:00 PM</p>
+                    <p>📍 Main Ground</p>
+
+                    <button class="register-btn" onclick="registerForEvent(2)">
+                        Register
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Event 3 -->
+            <div class="event-card" id="event-3">
+
+                <div class="event-image">
+                    <img src="images/sports-meet.png" alt="Sports Meet">
+                </div>
+
+                <div class="event-info">
+
+                    <span class="event-category">Sports</span>
+
+                    <h2>Annual Sports Meet</h2>
+
+                    <p>📅 September 25, 2026</p>
+                    <p>🕐 9:00 AM</p>
+                    <p>📍 College Ground</p>
+
+                    <button class="register-btn" onclick="registerForEvent(3)">
+                        Register
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 CampusConnect. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

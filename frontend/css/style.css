@@ -1,0 +1,1377 @@
+/* =========================
+General Styling
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: Arial, sans-serif;
+background-color: #f4f0ed;
+color: #222;
+line-height: 1.6;
+}
+
+a {
+text-decoration: none;
+}
+
+/* =========================
+Navigation Bar
+========================= */
+
+.navbar {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 18px 7%;
+background-color: white;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+font-size: 24px;
+font-weight: bold;
+}
+
+.nav-links {
+display: flex;
+list-style: none;
+gap: 25px;
+}
+
+.nav-links a {
+color: #333;
+font-weight: 500;
+}
+
+.nav-links a:hover {
+color: #4f46e5;
+}
+
+.login-btn,
+.explore-btn {
+border: none;
+padding: 11px 20px;
+border-radius: 8px;
+cursor: pointer;
+font-size: 15px;
+}
+
+.login-btn {
+background-color: #4f46e5;
+color: white;
+}
+
+/* =========================
+   Modern Hero Section
+   ========================= */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 70px 7%;
+    background: linear-gradient(135deg, #eef2ff, #fdfbff, #e8f0ff);
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.small-heading {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #4f46e5;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    margin: 10px 0 18px;
+    letter-spacing: -2px;
+}
+
+.hero-content > p:not(.small-heading) {
+    font-size: 19px;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.explore-btn {
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    color: white;
+    border: none;
+    padding: 13px 28px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(79, 70, 229, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.explore-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(79, 70, 229, 0.3);
+}
+
+.hero-image {
+    width: 650px;
+    max-width: 90%;
+    margin-top: 40px;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 22px;
+    display: block;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.02);
+}
+
+/* =========================
+Common Section Styling
+========================= */
+
+.quick-access,
+.events-section,
+.notices-section {
+padding: 60px 7%;
+}
+
+section h2 {
+font-size: 30px;
+margin-bottom: 30px;
+}
+
+/* =========================
+Quick Access Cards
+========================= */
+
+.quick-container {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 25px;
+}
+
+.quick-card {
+background-color: white;
+padding: 25px;
+border-radius: 12px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+.quick-card h3 {
+margin-bottom: 10px;
+}
+
+.quick-card p {
+color: #666;
+margin-bottom: 15px;
+}
+
+.quick-card a {
+color: #4f46e5;
+font-weight: bold;
+}
+
+/* =========================
+Event Cards
+========================= */
+
+.event-container {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 25px;
+}
+
+.event-card {
+background-color: white;
+padding: 25px;
+border-radius: 12px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+.event-card h3 {
+margin-bottom: 12px;
+}
+
+.event-card p {
+color: #666;
+margin-bottom: 8px;
+}
+
+.event-card button {
+margin-top: 12px;
+padding: 9px 15px;
+border: none;
+border-radius: 7px;
+background-color: #4f46e5;
+color: white;
+cursor: pointer;
+}
+
+/* =========================
+Notices
+========================= */
+
+.notice-container {
+display: grid;
+gap: 15px;
+}
+
+.notice {
+background-color: white;
+padding: 20px;
+border-left: 4px solid #4f46e5;
+border-radius: 8px;
+box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.notice h3 {
+margin-bottom: 5px;
+}
+
+.notice p {
+color: #666;
+}
+
+/* =========================
+Footer
+========================= */
+
+footer {
+text-align: center;
+padding: 25px;
+background-color: #111827;
+color: white;
+}
+
+/* =========================
+Responsive Design
+========================= */
+
+@media (max-width: 768px) {
+
+.navbar {
+    flex-direction: column;
+    gap: 15px;
+}
+.notice-box {
+    flex-direction: column;
+}
+.community-page {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.profile-header {
+    flex-direction: column;
+    text-align: center;
+}
+
+.profile-events {
+    grid-template-columns: 1fr;
+}
+
+.nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+}
+
+.quick-container,
+.event-container {
+    grid-template-columns: 1fr;
+}
+}
+/* =========================
+   Events Page
+========================= */
+
+.page-header {
+    text-align: center;
+    padding: 60px 7% 30px;
+}
+
+.page-header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    color: #666;
+    font-size: 17px;
+}
+
+.events-page {
+    padding: 30px 7% 70px;
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.event-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.event-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.event-info {
+    padding: 25px;
+}
+
+.event-category {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: #eef2ff;
+    color: #4f46e5;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.event-info h2 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.event-info p {
+    color: #666;
+    margin: 7px 0;
+}
+
+.register-btn {
+    width: 100%;
+    margin-top: 18px;
+    padding: 11px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4f46e5;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    opacity: 0.85;
+}
+/* =========================
+   Notices Page
+========================= */
+
+.notices-page {
+    padding: 30px 7% 70px;
+}
+
+.notice-list {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.notice-box {
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+.notice-icon {
+    font-size: 30px;
+}
+
+.notice-content {
+    flex: 1;
+}
+
+.notice-date {
+    font-size: 13px;
+    color: #777;
+}
+
+.notice-content h2 {
+    margin: 5px 0 8px;
+    font-size: 22px;
+}
+
+.notice-content p {
+    color: #666;
+}
+/* =========================
+   Community Page
+========================= */
+
+.community-page {
+    max-width: 850px;
+    margin: auto;
+    padding: 30px 7% 70px;
+}
+
+.create-post {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    margin-bottom: 30px;
+}
+
+.create-post h2 {
+    margin-bottom: 15px;
+}
+
+.create-post textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    resize: vertical;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+}
+
+.post-btn {
+    margin-top: 12px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4f46e5;
+    color: white;
+    cursor: pointer;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #eef2ff;
+    color: #4f46e5;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.post-header h3 {
+    margin: 0;
+}
+
+.post-header span {
+    color: #888;
+    font-size: 13px;
+}
+
+.post-text {
+    margin: 20px 0;
+    color: #444;
+}
+
+.post-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.post-actions button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #555;
+    font-size: 14px;
+}
+
+.post-actions button:hover {
+    color: #4f46e5;
+}
+/* =========================
+   Profile Page
+========================= */
+
+.profile-page {
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 7% 70px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 35px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+   border-radius:50%;
+   overflow:hidden;
+   flex-shrink: 0;
+}
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-details h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.profile-details p {
+    color: #666;
+    margin: 5px 0;
+}
+
+.edit-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4f46e5;
+    color: white;
+    cursor: pointer;
+}
+
+.profile-section {
+    margin-top: 30px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+.profile-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.profile-section p {
+    color: #666;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills span {
+    padding: 8px 15px;
+    background-color: #eef2ff;
+    color: #4f46e5;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.profile-events {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.profile-event {
+    padding: 20px;
+    background-color: #f5f7fb;
+    border-radius: 10px;
+}
+
+.profile-event h3 {
+    margin-bottom: 5px;
+}
+
+.profile-event p {
+    color: #4f46e5;
+    font-size: 14px;
+}
+/* =========================
+   Notifications Page
+   ========================= */
+
+#notificationList {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto 70px;
+}
+
+#notificationList .notice-box {
+    display: block !important;
+    position: relative;
+    width: 100%;
+    padding: 25px 30px 25px 85px;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    box-sizing: border-box;
+    text-align: left !important;
+}
+
+#notificationList .notice-icon {
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    font-size: 28px;
+    width: 40px;
+    text-align: center;
+}
+
+#notificationList .notice-content {
+    width: auto !important;
+    max-width: none !important;
+    text-align: left !important;
+}
+
+#notificationList .notice-date {
+    display: block;
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 6px;
+    text-align: left !important;
+}
+
+#notificationList .notice-content h2 {
+    margin: 5px 0 8px;
+    font-size: 22px;
+    text-align: left !important;
+}
+
+#notificationList .notice-content p {
+    margin: 0;
+    color: #666;
+    line-height: 1.6;
+    text-align: left !important;
+}
+/* =========================
+   Admin Panel
+   ========================= */
+
+.admin-container {
+    width: 90%;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+.admin-container h2 {
+    margin-bottom: 20px;
+}
+
+.admin-container input,
+.admin-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.admin-container textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.admin-container button {
+    padding: 11px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4f46e5;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.admin-container button:hover {
+    opacity: 0.85;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.logo img{
+    width: 40px;
+    height: 40px;
+    object-fit:contain;
+}
+.logo span{
+    font-weight: bold;
+}
+/* =========================
+   Login Page Design
+   ========================= */
+
+.auth-container {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #eef2ff, #fdfbff);
+}
+
+.auth-box {
+    width: 90%;
+    max-width: 420px;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.auth-box h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.auth-box > p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.auth-box button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 9px;
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.auth-box button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+/* =========================
+   Professional Events Page
+   ========================= */
+
+.events-page {
+    background: #f7f8fc;
+    min-height: 600px;
+    padding-top: 20px;
+}
+
+.page-header {
+    padding: 60px 7% 35px;
+    background: white;
+    border-bottom: 1px solid #e8e8ee;
+}
+
+.page-header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+}
+
+.page-header p {
+    font-size: 17px;
+    color: #666;
+    margin: 0;
+}
+.events-page .event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 30px 7% 70px;
+}
+.page-header {
+    text-align: center;
+}
+.page-header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+.page-header p {
+    color: #666;
+    font-size: 17px;
+}
+/* =========================
+   Professional Home Hero
+   ========================= */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(79, 70, 229, 0.08);
+    top: -100px;
+    left: -80px;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: rgba(99, 102, 241, 0.07);
+    bottom: -100px;
+    right: -60px;
+}
+
+.hero-content,
+.hero-image {
+    position: relative;
+    z-index: 1;
+}
+/* =========================
+   Professional Quick Cards
+   ========================= */
+
+.quick-card {
+    background: white;
+    border: 1px solid #e9e9ef;
+    border-radius: 14px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.quick-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+}
+/* =========================
+   Home Section Headings
+   ========================= */
+
+section h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: -0.3px;
+}
+
+section > p {
+    color: #666;
+    line-height: 1.6;
+}
+/* =========================
+   Professional Hero Button
+   ========================= */
+
+.explore-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.explore-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(79, 70, 229, 0.2);
+}
+/* =========================
+   Professional Latest Notices
+   ========================= */
+
+.notices-section {
+    padding: 60px 7%;
+    background: #f7f8fc;
+}
+
+.notices-section h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 30px;
+}
+
+.notice-container {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.notice {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e8e8ee;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.notice:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.09);
+}
+
+.notice h3 {
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.notice p {
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+/* =========================
+   Professional Footer
+   ========================= */
+
+footer {
+    padding: 25px 7%;
+    background: #111827;
+    color: #d1d5db;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+/* View Details Button */
+
+.view-details-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #4f46e5;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.view-details-btn:hover {
+    background: #4338ca;
+    transform: translateY(-2px);
+}
+/* =========================
+   Professional Notices Boxes
+   ========================= */
+
+.notices-page {
+    background: #f7f8fc;
+    min-height: 600px;
+    padding: 50px 7% 70px;
+}
+
+.notices-page h1 {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 38px;
+}
+
+.notices-page .notice-list {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.notices-page .notice-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 25px 30px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.notices-page .notice-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.09);
+}
+
+.notices-page .notice-icon {
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+.notices-page .notice-content {
+    flex: 1;
+}
+
+.notices-page .notice-date {
+    font-size: 13px;
+    color: #777;
+}
+
+.notices-page .notice-content h2 {
+    margin: 6px 0 8px;
+    font-size: 21px;
+}
+
+.notices-page .notice-content p {
+    margin: 0;
+    color: #666;
+    line-height: 1.6;
+}
+/* =========================
+   Beautiful Notice Cards
+   ========================= */
+
+.notices-page .notice-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.notices-page .notice-box::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background: #4f46e5;
+}
+
+.notices-page .notice-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eef2ff;
+    border-radius: 12px;
+    font-size: 24px;
+}
+/* =========================
+   Professional Community Page
+   ========================= */
+
+.community-page {
+    background: #f3f7ff;
+    min-height: 600px;
+    padding: 50px 7% 70px;
+}
+/* =========================
+   Professional Community Posts
+   ========================= */
+
+.community-page .post-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.community-page .post-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+/* Community Post Header */
+
+.community-page .post-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.community-page .post-header h3 {
+    margin: 0 0 3px 0;
+}
+
+.community-page .post-header span {
+    display: block;
+    margin: 0;
+    font-size: 13px;
+    color: #777;
+}
+/* Compact Community Post Cards */
+
+.community-page .post-card {
+    max-width: 750px;
+    margin: 0 auto 18px;
+    padding: 18px 22px;
+}
+
+.community-page .post-text {
+    margin: 12px 0;
+    line-height: 1.5;
+}
+
+.community-page .post-actions {
+    margin-top: 10px;
+}
+/* Compact Rectangle Community Posts */
+
+.community-page .post-card {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto 18px;
+    padding: 18px 25px;
+    box-sizing: border-box;
+    min-height: 150px;
+}
+/* Community Action Buttons */
+
+.community-page .post-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.community-page .post-actions button {
+    padding: 8px 14px;
+    border: 1px solid #dbe3f0;
+    border-radius: 8px;
+    background: #f8fbff;
+    color: #374151;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.community-page .post-actions button:hover {
+    background: #eaf3ff;
+    border-color: #93c5fd;
+    color: #2563eb;
+}
+/* Community Create Post Polish */
+
+.community-page .create-post {
+    border-top: 3px solid #3b82f6;
+}
+
+.community-page .create-post h2 {
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+/* Community Page Header */
+
+.page-header h1 {
+    letter-spacing: -0.5px;
+}
+
+.page-header p {
+    line-height: 1.6;
+}
+/* Community Page Background */
+
+.community-page {
+    background: #f5f8ff;
+}
+/* Community Post Spacing */
+
+.community-page .posts {
+    max-width: 900px;
+    margin: 0 auto;
+}
+/* Community Post Button */
+
+.community-page .post-btn {
+    background: #2563eb;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 0.2s ease;
+}
+
+.community-page .post-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+/* Profile Page Design */
+
+.profile-page {
+    background: #f5f8ff;
+    min-height: 600px;
+    padding: 50px 7% 70px;
+}
+
+.profile-page .profile-card {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 35px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    box-sizing: border-box;
+}
+/* Profile Header */
+
+.profile-page .profile-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-page .profile-card::before {
+    content: "";
+    display: block;
+    height: 90px;
+    margin: -35px -35px 25px;
+    background: linear-gradient(135deg, #3b82f6, #6366f1);
+}
+
+.profile-page .profile-card h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+/* Profile Header Design */
+
+.profile-page .profile-header {
+    max-width: 850px;
+    margin: 0 auto 25px;
+    padding: 30px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    box-sizing: border-box;
+}
+
+.profile-page .profile-details h1 {
+    margin: 0 0 8px;
+    font-size: 30px;
+}
+
+.profile-page .profile-details p {
+    margin: 5px 0;
+    color: #64748b;
+}
+/* Profile Sections */
+
+.profile-page .profile-section {
+    max-width: 850px;
+    margin: 0 auto 25px;
+    padding: 25px 30px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.05);
+    box-sizing: border-box;
+}
+
+.profile-page .profile-section h2 {
+    margin: 0 0 15px;
+    font-size: 22px;
+}
+
+.profile-page .profile-section > p {
+    color: #64748b;
+    line-height: 1.7;
+    margin: 0;
+}
+/* Profile Skill Tags */
+
+.profile-page .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.profile-page .skills span {
+    padding: 8px 14px;
+    background: #eef4ff;
+    color: #2563eb;
+    border: 1px solid #dbeafe;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.profile-page .skills span:hover {
+    background: #dbeafe;
+    transform: translateY(-2px);
+}
+

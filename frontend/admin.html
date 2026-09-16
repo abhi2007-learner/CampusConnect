@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel | CampusConnect</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="CampusConnect Logo">
+                <span>CampusConnect</span>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="notices.html">Notices</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="notifications.html">🔔 Notifications</a></li>
+                <li><a href="admin.html">⚙️ Admin Panel</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>Admin Panel</h1>
+        <p>Manage CampusConnect content.</p>
+    </section>
+
+    <main>
+
+        <div class="admin-container">
+
+            <h2>📢 Add Notice</h2>
+
+            <input
+                type="text"
+                id="noticeTitle"
+                placeholder="Notice Title"
+            >
+
+            <textarea
+                id="noticeContent"
+                placeholder="Notice Content"
+            ></textarea>
+
+            <input
+                type="date"
+                id="noticeDate"
+            >
+
+            <button id="addNoticeBtn">
+                Add Notice
+            </button>
+
+        </div>
+        <div class="admin-container">
+
+    <h2>📅 Add Event</h2>
+
+    <input
+        type="text"
+        id="eventTitle"
+        placeholder="Event Title"
+    >
+
+    <textarea
+        id="eventDescription"
+        placeholder="Event Description"
+    ></textarea>
+
+    <input
+        type="date"
+        id="eventDate"
+    >
+
+    <button id="addEventBtn">
+        Add Event
+    </button>
+
+</div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 CampusConnect. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

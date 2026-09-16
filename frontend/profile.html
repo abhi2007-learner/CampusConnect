@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile | CampusConnect</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+    <img src="images/logo.png" alt="CampusConnect Logo">
+    <span>CampusConnect</span>
+</div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="notices.html">Notices</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="notifications.html">🔔 Notifications</a></li>
+                <li><a href="admin.html">⚙️ Admin Panel</a></li>
+            </ul>
+
+            <a href="login.html" class="login-btn">Login</a>
+
+        </nav>
+    </header>
+
+
+    <!-- Profile -->
+    <main class="profile-page">
+
+        <!-- Profile Header -->
+        <section class="profile-header">
+
+            <div class="profile-avatar">
+                <img src="images/profile.jpg" alt="Profile Picture">
+            </div>
+
+            <div class="profile-details">
+
+                <h1 id="profileName">Abhishikta Mishra</h1>
+
+                <p id="profileCourse"></p>
+
+                <p id="profileYear"></p>
+                <p id="profileEmail"></p>
+                <button class="edit-btn"
+                id="editProfileBtn">
+                    Edit Profile
+                </button>
+                <div id="editProfileForm" style="display: none;">
+
+    <input type="text" id="editCourse" placeholder="Course">
+
+    <input type="text" id="editYear" placeholder="Year">
+
+    <textarea id="editBio" placeholder="About Me"></textarea>
+
+    <button id="saveProfileBtn">Save Changes</button>
+
+</div>
+
+            </div>
+
+        </section>
+
+
+        <!-- About -->
+        <section class="profile-section">
+
+            <h2>About Me</h2>
+
+            <p id="profileBio"></p>   
+
+        </section>
+
+
+        <!-- Skills -->
+        <section class="profile-section">
+
+            <h2>Skills</h2>
+
+            <div class="skills">
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Python</span>
+                <span>Flask</span>
+                <span>Git</span>
+                <span>Drawing </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- Events -->
+        <section class="profile-section">
+
+            <h2>My Events</h2>
+
+            <div class="profile-events">
+
+                <div class="profile-event">
+                    <h3>Tech Fest 2026</h3>
+                    <p>Registered</p>
+                </div>
+
+                <div class="profile-event">
+                    <h3>Cultural Night</h3>
+                    <p>Registered</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 CampusConnect. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>    
+
+</body>
+</html>
